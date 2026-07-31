@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/* on nomadhomes.co and getremy.ai
+note: >-
+  nomadhomes.co 301-redirects to getremy.ai (the company rebranded Nomad Homes to
+  RemyAI). All /.well-known/* paths on nomadhomes.co return the Framer SPA shell
+  (soft-404, text/html) and are NOT real documents. getremy.ai publishes a real
+  ai-plugin.json (application/json). It declares api.type=none and auth.type=none
+  — RemyAI exposes no public API.
+hosts:
+- host: https://getremy.ai
+  documents:
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    content_type: application/json
+    file: nomad-homes-ai-plugin.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://nomadhomes.co
+  note: 301 -> getremy.ai; all well-known paths return the SPA shell (soft-404)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/html
+    soft_404: true
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    soft_404: true
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    soft_404: true
+  - path: /.well-known/api-catalog
+    status: 200
+    content_type: text/html
+    soft_404: true

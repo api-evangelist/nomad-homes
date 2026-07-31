@@ -1,8 +1,27 @@
 aid: nomad-homes
 name: Nomad Homes
-description: 'Nomad Homes is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Marketplace. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Nomad Homes is a Partech-backed proptech company originally launched as a real-estate
+  marketplace. It has since rebranded and pivoted to RemyAI (getremy.ai) — "the 24/7
+  intelligent assistant for real estate agents." RemyAI listens to agents' calls and
+  texts, transcribes and summarizes them, auto-creates follow-up tasks and reminders,
+  organizes buyer/seller contacts, and manages voicemail across iOS, Android, and
+  desktop. The company's original domain nomadhomes.co now 301-redirects to getremy.ai.
+  RemyAI publishes a public /.well-known/ai-plugin.json and an llms.txt describing the
+  product, but it exposes NO public developer API, SDK, OpenAPI, or developer portal
+  (its ai-plugin manifest explicitly declares api.type=none and auth.type=none).
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.getremy.ai/remy_logo.png
 url: https://raw.githubusercontent.com/api-evangelist/nomad-homes/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +29,46 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebranded-to: RemyAI (https://www.getremy.ai/)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Marketplace
+- Real Estate
+- PropTech
+- Artificial Intelligence
+- AI Assistant
+- Productivity
+common:
+- type: Website
+  url: https://nomadhomes.co/
+- type: Website
+  name: RemyAI (current)
+  url: https://www.getremy.ai/
+- type: GitHubOrganization
+  url: https://github.com/nomadhomes
+- type: TermsOfService
+  url: https://www.getremy.ai/terms
+- type: PrivacyPolicy
+  url: https://www.getremy.ai/privacy
+- type: Support
+  url: mailto:support@getremy.ai
+- type: WellKnown
+  url: well-known/nomad-homes-well-known.yml
+- type: LLMsTxt
+  url: llms/nomad-homes-llms.txt
+- type: DomainSecurity
+  url: security/nomad-homes-domain-security.yml
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://nomadhomes.co/
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

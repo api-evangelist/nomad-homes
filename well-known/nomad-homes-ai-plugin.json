@@ -1,0 +1,27 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "RemyAI",
+  "name_for_model": "remy_ai",
+  "description_for_human": "RemyAI is your AI personal assistant for real estate agents \u2014 it listens, remembers, and takes action so you can focus on closing deals.",
+  "description_for_model": "RemyAI is an AI-powered personal assistant designed specifically for real estate agents. It integrates with calls, texts, and contacts to automatically take notes, create follow-ups, and manage tasks. It helps agents save time, increase responsiveness, and close more deals.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "none"
+  },
+  "logo_url": "https://www.getremy.ai/remy_logo.png",
+  "contact_email": "support@getremy.ai",
+  "legal_info_url": "https://www.getremy.ai/privacy",
+  "terms_of_service_url": "https://www.getremy.ai/terms",
+  "additional_metadata": {
+    "category": "Real Estate AI Assistant",
+    "keywords": [
+      "AI assistant for real estate agents",
+      "realtor productivity",
+      "proptech automation",
+      "AI call assistant"
+    ],
+    "homepage_url": "https://www.getremy.ai/"
+  }
+}
