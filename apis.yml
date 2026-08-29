@@ -10,6 +10,17 @@ description: >-
   RemyAI publishes a public /.well-known/ai-plugin.json and an llms.txt describing the
   product, but it exposes NO public developer API, SDK, OpenAPI, or developer portal
   (its ai-plugin manifest explicitly declares api.type=none and auth.type=none).
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
