@@ -32,6 +32,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://nomadhomes.co/', status: 301, note: 'declared website redirects to https://www.getremy.ai/ — a different registrable domain (nomadhomes.co -> getremy.ai), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://www.getremy.ai/remy_logo.png
 url: https://raw.githubusercontent.com/api-evangelist/nomad-homes/refs/heads/main/apis.yml
 x-type: company
