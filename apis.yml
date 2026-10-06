@@ -45,7 +45,7 @@ x-tier-reason: portfolio-lead
 x-rebranded-to: RemyAI (https://www.getremy.ai/)
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-10-06'
 tags:
 - Company
 - Marketplace
@@ -64,6 +64,8 @@ tags_raw:
 - Productivity
 - Real-Estate
 common:
+- url: https://www.getremy.ai/blog
+  type: Blog
 - type: Website
   url: https://nomadhomes.co/
 - type: Website
