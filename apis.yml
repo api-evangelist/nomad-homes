@@ -64,8 +64,6 @@ tags_raw:
 - Productivity
 - Real-Estate
 common:
-- type: Plans
-  url: plans/nomad-homes-plans-pricing.yml
 - url: https://www.getremy.ai/blog
   type: Blog
 - type: Website
